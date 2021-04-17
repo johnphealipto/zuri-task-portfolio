@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  height: 100vh;
+}
+
+.title {
+  background-color: var(--black);
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: var(--white);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), 
+              2px 2px 2px rgba(0, 0, 0, 0.1),
+              4px 4px 4px rgba(0, 0, 0, 0.1), 
+              8px 8px 8px rgba(0, 0, 0, 0.1),
+              16px 16px 16px rgba(0, 0, 0, 0.1),
+              32px 32px 32px rgba(0, 0, 0, 0.1),
+              64px 64px 64px rgba(0, 0, 0, 0.1),
+              -1px -1px 1px rgba(0, 0, 0, 0.1),
+              -2px -2px 2px rgba(0, 0, 0, 0.1), 
+              -4px -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-link-btn-light {
+  margin-top: 5vh;
+}
+
+.page-link-btn-light a {
+  color: var(--white);
+  padding: 7px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+}
+.page-link-btn-dark {
+  margin-top: 10vh;
+}
+.page-link-btn-dark a {
+  color: var(--black);
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 7px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+:root {
+  --border: 1px solid black;
+  --white: ghostwhite;
+  --black: #141414;
+}
+
+body {
+  background: var(--white);
+  font-family: 'Josefin Sans', sans-serif;
+  color: #243b55;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 3fr;
+}
+.nav-area,
+.main-area {
+  overflow-y: auto;
+}
+
+
+/* --- Nav Area --- */
+.nav-area {
+  border-right: var(--border);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.nav-container {
+  padding: 50px 1px;
+}
+
+.img-area {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  border: var(--border);
+  border-radius: 50% 0 50% 50%;
+}
+.img-area img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.nav-area .nav-list {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.nav-area .nav-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-area .nav-list li {
+  font-size: 1.5rem;
+  padding: 20px 5px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.nav-area .nav-list li i {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 5px;
+  border-radius: 25%;
+  vertical-align: text-bottom;
+}
+.nav-area .nav-list li a {
+  padding-left: 6px;
+}
+.nav-area .nav-list li:hover {
+  font-size: 1.8rem !important;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+
+/* --- Home Area --- */
+.home-container {
+  padding: 25vh 50px 0 50px;
+}
+
+section#home {
+  background: linear-gradient(90deg, var(--white) 40%, var(--black) 25%);
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home-grid .intro {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 4rem;
+  width: 100%;
+  padding: 70px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), 
+              2px 2px 2px rgba(0, 0, 0, 0.05),
+              4px 4px 4px rgba(0, 0, 0, 0.05), 
+              8px 8px 8px rgba(0, 0, 0, 0.05),
+              16px 16px 16px rgba(0, 0, 0, 0.05),
+              32px 32px 32px rgba(0, 0, 0, 0.05),
+              64px 64px 64px rgba(0, 0, 0, 0.05),
+              -1px -1px 1px rgba(0, 0, 0, 0.05),
+              -2px -2px 2px rgba(0, 0, 0, 0.05), 
+              -4px -4px 4px rgba(0, 0, 0, 0.05),
+              -8px -8px 8px rgba(0, 0, 0, 0.05),
+              -16px -16px 16px rgba(0, 0, 0, 0.05),
+              -32px -32px 32px rgba(0, 0, 0, 0.05),
+              -64px -64px 16px rgba(0, 0, 0, 0.05);
+}
+.home-grid .intro h1 > span {
+  font-weight: bold;
+}
+.home-grid .profile {
+  color: var(--white);
+  margin-top: 6vh;
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* --- Experience Area --- */
+.area-container {
+  padding: 50px;
+}
+.my-experience {
+  margin-top: 3vh;
+}
+.my-experience-group {
+  display: grid;
+  grid-template-columns: 1.3fr 5fr;
+  margin-top: 5vh;
+  font-size: 1.3rem;
+}
+.experience-timeline p:first-of-type,
+.experience-details p:first-of-type {
+  font-weight: bold;
+  color: black;
+}
+.experience-list {
+  margin-top: 2vh;
+}
