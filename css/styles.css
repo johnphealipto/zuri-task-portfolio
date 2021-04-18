@@ -39,7 +39,7 @@ section {
   text-decoration: none;
 }
 .page-link-btn-dark {
-  margin-top: 10vh;
+  margin-top: 6vh;
 }
 .page-link-btn-dark a {
   color: var(--black);
@@ -89,7 +89,7 @@ body {
   transition: all 0.1s;
 }
 .nav-container {
-  padding: 50px 1px;
+  padding: 50px 1px 0 1px;
 }
 
 .img-area {
@@ -107,7 +107,7 @@ body {
 .nav-area .nav-list {
   width: 80%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 .nav-area .nav-list ul {
   list-style: none;
@@ -115,8 +115,8 @@ body {
   padding: 0;
 }
 .nav-area .nav-list li {
-  font-size: 1.5rem;
-  padding: 20px 5px;
+  font-size: 1.4rem;
+  padding: 17px 5px;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
@@ -153,10 +153,10 @@ section#home {
 .home-grid .intro {
   background-color: var(--black);
   color: var(--white);
-  font-size: 2rem;
+  font-size: 1.95rem;
   line-height: 4rem;
   width: 100%;
-  padding: 70px;
+  padding: 50px;
   border-radius: 5px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), 
               2px 2px 2px rgba(0, 0, 0, 0.05),
@@ -187,7 +187,7 @@ section#home {
 
 /* --- Experience Area --- */
 .area-container {
-  padding: 50px;
+  padding: 50px 50px 0 50px;
 }
 .my-experience {
   margin-top: 3vh;
@@ -196,7 +196,7 @@ section#home {
   display: grid;
   grid-template-columns: 1.3fr 5fr;
   margin-top: 5vh;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 }
 .experience-timeline p:first-of-type,
 .experience-details p:first-of-type {
@@ -208,7 +208,7 @@ section#home {
 }
 
 .certifications {
-  margin-top: 13vh;
+  margin-top: 10vh;
 }
 
 
@@ -238,7 +238,7 @@ section#contact .container {
 }
 
 .contact-container {
-  padding: 100px;
+  padding: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -271,8 +271,8 @@ section#contact .container {
 }
 
 section#contact > p {
-  margin-top: 16vh;
-  font-size: 1.2rem;
+  margin-top: 20vh;
+  font-size: 1.1rem;
   text-align: center;
   justify-content: center;
 }
