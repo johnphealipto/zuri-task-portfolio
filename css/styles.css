@@ -132,7 +132,7 @@ body {
   padding-left: 6px;
 }
 .nav-area .nav-list li:hover {
-  font-size: 1.8rem !important;
+  font-size: 1.7rem !important;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
